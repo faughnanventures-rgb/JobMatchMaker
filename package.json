@@ -1,0 +1,12 @@
+{
+  "name": "job-watch",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "crawl": "node crawler/run.js",
+    "test": "node tests/crawler.test.js && node tests/tailor.test.js && node tests/api.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "minBase": 80000,
+  "contractMinHourly": 55,
+  "homeState": "Florida",
+  "homeStateAbbr": "FL",
+  "totalYears": 12,
+  "renewableYears": 2,
+  "maxTravelPercent": 20,
+  "localPlaces": [
+    "South Florida",
+    "Miami",
+    "Fort Lauderdale",
+    "West Palm Beach",
+    "Palm Beach",
+    "Juno Beach",
+    "Jupiter, FL",
+    "Boca Raton",
+    "Delray Beach",
+    "Boynton Beach",
+    "Lake Worth",
+    "Pompano Beach",
+    "Hollywood, FL",
+    "Homestead",
+    "Broward",
+    "Miami-Dade",
+    "Florida Keys",
+    "Key Largo",
+    "Everglades",
+    "Naples, FL",
+    "Stuart, FL"
+  ],
+  "fieldRegions": [
+    "Central America",
+    "Mesoamerica",
+    "Belize",
+    "Guatemala",
+    "Honduras",
+    "El Salvador",
+    "Nicaragua",
+    "Costa Rica",
+    "Panama"
+  ],
+  "minBaseBarbados": 50000,
+  "barbadosPlaces": [
+    "Barbados",
+    "Bridgetown"
+  ],
+  "boardSearches": [
+    "wildlife biologist",
+    "environmental permitting",
+    "environmental compliance",
+    "NEPA",
+    "endangered species",
+    "environmental scientist",
+    "habitat restoration",
+    "conservation scientist"
+  ],
+  "excludeCompanyWords": [
+    "oil",
+    "gas",
+    "petroleum",
+    "pipeline",
+    "coal",
+    "drilling",
+    "mining"
+  ],
+  "boardWords": [
+    "environmental",
+    "wildlife",
+    "conservation",
+    "ecology",
+    "sustainability",
+    "permitting",
+    "biologist",
+    "gis"
+  ]
+}

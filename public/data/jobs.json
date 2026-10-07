@@ -1,0 +1,739 @@
+{
+ "sample": true,
+ "generatedAt": "2026-10-03T21:00:00Z",
+ "profile": {
+  "minBase": 80000,
+  "contractMinHourly": 55
+ },
+ "health": [
+  {
+   "companyId": "174-power-global",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 1,
+   "matched": 1
+  },
+  {
+   "companyId": "plus-power",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 5,
+   "matched": 0
+  },
+  {
+   "companyId": "grid-united",
+   "ok": true,
+   "method": "breezy",
+   "postings": 14,
+   "matched": 0
+  },
+  {
+   "companyId": "audubon",
+   "ok": false,
+   "error": "Not read during the manual test. The scheduled check reads this site's job feed directly."
+  },
+  {
+   "companyId": "dudek",
+   "ok": false,
+   "error": "Not read during the manual test."
+  },
+  {
+   "companyId": "cypress-creek",
+   "ok": false,
+   "error": "Not read during the manual test."
+  },
+  {
+   "companyId": "renewable-properties",
+   "ok": false,
+   "error": "Not read during the manual test."
+  }
+ ],
+ "jobs": [
+  {
+   "id": "174-power-global:4014040009",
+   "companyId": "174-power-global",
+   "title": "Permitting Manager",
+   "url": "https://job-boards.greenhouse.io/174powerglobal/jobs/4014040009",
+   "posted": null,
+   "firstSeen": "2026-10-03",
+   "lastSeen": "2026-10-03",
+   "closed": false,
+   "verified": true,
+   "employment": "employee",
+   "pay": {
+    "min": 130000,
+    "max": 165000,
+    "unit": "year",
+    "text": "$130,000 to $165,000"
+   },
+   "remote": {
+    "level": "restricted",
+    "note": "The ideal candidate will be within commutable distance to the Houston, TX office. The posting says remote work may be possible."
+   },
+   "fit": [
+    "permitting",
+    "solar"
+   ],
+   "concerns": [
+    "Asks for 4+ years in renewable energy, more than you have in that sector.",
+    "Remote with a location requirement. Check that Florida qualifies.",
+    "Permitting is the core of the job.",
+    "Company or its parent has business outside clean energy. Check against your no fossil fuels rule."
+   ],
+   "score": 6,
+   "closes": null,
+   "closesNote": null
+  },
+  {
+   "id": "dudek:sample-1",
+   "companyId": "dudek",
+   "title": "Senior Project Manager, Energy Development and Permitting",
+   "url": "https://dudek.com/careers/",
+   "posted": null,
+   "firstSeen": "2026-10-03",
+   "lastSeen": "2026-10-03",
+   "closed": false,
+   "verified": false,
+   "employment": "employee",
+   "pay": {
+    "min": 100000,
+    "max": 180000,
+    "unit": "year",
+    "text": "$100,000 to $180,000"
+   },
+   "remote": {
+    "level": "full",
+    "note": ""
+   },
+   "fit": [
+    "permitting"
+   ],
+   "concerns": [
+    "Permitting is the core of the job.",
+    "Consulting firm, so expect billable hours and mixed clients."
+   ],
+   "score": 5,
+   "closes": null,
+   "closesNote": null
+  },
+  {
+   "id": "audubon:sample-1",
+   "companyId": "audubon",
+   "title": "Policy Specialist, Everglades",
+   "url": "https://audubon.wd503.myworkdayjobs.com/Audubon",
+   "posted": null,
+   "firstSeen": "2026-10-03",
+   "lastSeen": "2026-10-03",
+   "closed": false,
+   "verified": false,
+   "employment": "employee",
+   "pay": {
+    "min": 75000,
+    "max": 89000,
+    "unit": "year",
+    "text": "$75,000 to $89,000"
+   },
+   "remote": {
+    "level": "full",
+    "note": "Listed location: Audubon Florida, remote."
+   },
+   "fit": [
+    "wetlands and Section 404",
+    "agency consultation"
+   ],
+   "concerns": [
+    "Low end of the range is under your $80,000 floor.",
+    "Policy and advocacy work more than field science."
+   ],
+   "score": 5,
+   "closes": null,
+   "closesNote": null
+  },
+  {
+   "id": "audubon:sample-2",
+   "companyId": "audubon",
+   "title": "Science lead, Lake Okeechobee and Northern Everglades",
+   "url": "https://audubon.wd503.myworkdayjobs.com/Audubon",
+   "posted": null,
+   "firstSeen": "2026-10-03",
+   "lastSeen": "2026-10-03",
+   "closed": false,
+   "verified": false,
+   "employment": "employee",
+   "pay": null,
+   "remote": {
+    "level": "full",
+    "note": "Listed location: Audubon Florida, in-office or remote."
+   },
+   "fit": [
+    "wetlands and Section 404",
+    "wildlife",
+    "agency consultation"
+   ],
+   "concerns": [
+    "Pay not listed.",
+    "The listing found was months old, so it may be filled.",
+    "Leans on hydrology and water policy more than wildlife."
+   ],
+   "score": 7,
+   "closes": null,
+   "closesNote": null
+  },
+  {
+   "id": "cypress-creek:sample-1",
+   "companyId": "cypress-creek",
+   "title": "Senior Manager or Associate Director, Environmental Affairs",
+   "url": "https://ccrenew.com/careers/",
+   "posted": null,
+   "firstSeen": "2026-10-03",
+   "lastSeen": "2026-10-03",
+   "closed": false,
+   "verified": false,
+   "employment": "employee",
+   "pay": null,
+   "remote": {
+    "level": "full",
+    "note": ""
+   },
+   "fit": [
+    "solar",
+    "permitting"
+   ],
+   "concerns": [
+    "Pay not listed.",
+    "Senior title. May expect people management."
+   ],
+   "score": 6,
+   "closes": null,
+   "closesNote": null
+  },
+  {
+   "id": "renewable-properties:sample-1",
+   "companyId": "renewable-properties",
+   "title": "Permitting Manager",
+   "url": "https://www.renewprop.com/careers",
+   "posted": null,
+   "firstSeen": "2026-10-03",
+   "lastSeen": "2026-10-03",
+   "closed": false,
+   "verified": false,
+   "employment": "employee",
+   "pay": null,
+   "remote": {
+    "level": "preferred",
+    "note": "Remote possible. The role focuses on projects in the western United States."
+   },
+   "fit": [
+    "solar",
+    "permitting",
+    "wildlife"
+   ],
+   "concerns": [
+    "Pay not listed.",
+    "Asks for 5+ years in renewable energy, more than you have in that sector.",
+    "Remote, but a location is listed or preferred.",
+    "Permitting is the core of the job."
+   ],
+   "score": 6,
+   "closes": null,
+   "closesNote": null
+  }
+ ],
+ "companies": [
+  {
+   "id": "174-power-global",
+   "name": "174 Power Global",
+   "type": "renewable",
+   "focus": "mixed",
+   "region": "US",
+   "hq": "Irvine, CA",
+   "about": "Develops, builds, and runs utility-scale solar and battery storage projects in North America. It is an affiliate of Hanwha Group, a large South Korean conglomerate.",
+   "careers": "https://job-boards.greenhouse.io/174powerglobal"
+  },
+  {
+   "id": "plus-power",
+   "name": "Plus Power",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "The Woodlands, TX",
+   "about": "Develops, owns, and operates standalone battery storage projects that connect to the transmission grid. Many of its roles are remote.",
+   "careers": "https://job-boards.greenhouse.io/pluspower"
+  },
+  {
+   "id": "grid-united",
+   "name": "Grid United",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Houston, TX",
+   "about": "Develops long-distance electric transmission lines to connect regional grids. Its postings say it welcomes Peace Corps and public service backgrounds.",
+   "careers": "https://grid-united.breezy.hr"
+  },
+  {
+   "id": "madison-energy",
+   "name": "Madison Energy Infrastructure",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "about": "Owns and operates commercial and industrial solar and storage sites across the US.",
+   "careers": "https://job-boards.greenhouse.io/madisonenergyinfrastructure"
+  },
+  {
+   "id": "cypress-creek",
+   "name": "Cypress Creek Renewables",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Durham, NC",
+   "about": "Develops, finances, owns, and operates solar and storage projects across the US.",
+   "careers": "https://ccrenew.com/careers/"
+  },
+  {
+   "id": "renewable-properties",
+   "name": "Renewable Properties",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "San Francisco, CA",
+   "about": "Develops and invests in small-scale utility and community solar and storage projects.",
+   "careers": "https://www.renewprop.com/careers"
+  },
+  {
+   "id": "origis-energy",
+   "name": "Origis Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Miami, FL",
+   "about": "Solar and storage developer and operator based in South Florida.",
+   "careers": "https://origisenergy.com/careers/"
+  },
+  {
+   "id": "longroad-energy",
+   "name": "Longroad Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Boston, MA",
+   "about": "Develops, owns, and operates wind, solar, and storage projects.",
+   "careers": "https://www.longroadenergy.com/careers/"
+  },
+  {
+   "id": "pattern-energy",
+   "name": "Pattern Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "San Francisco, CA",
+   "about": "Develops and operates wind, solar, transmission, and storage projects.",
+   "careers": "https://patternenergy.com/careers/"
+  },
+  {
+   "id": "apex-clean-energy",
+   "name": "Apex Clean Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Charlottesville, VA",
+   "about": "Develops, builds, and operates utility-scale wind, solar, and storage.",
+   "careers": "https://www.apexcleanenergy.com/careers/"
+  },
+  {
+   "id": "scout-clean-energy",
+   "name": "Scout Clean Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Boulder, CO",
+   "about": "Develops, owns, and operates wind, solar, and storage projects.",
+   "careers": "https://scoutcleanenergy.com/careers/"
+  },
+  {
+   "id": "leeward",
+   "name": "Leeward Renewable Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Dallas, TX",
+   "about": "Owns and operates wind, solar, and storage projects across the US.",
+   "careers": "https://www.leewardenergy.com/careers/"
+  },
+  {
+   "id": "arevon",
+   "name": "Arevon",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Scottsdale, AZ",
+   "about": "Develops, owns, and operates utility-scale solar and storage.",
+   "careers": "https://arevonenergy.com/careers/"
+  },
+  {
+   "id": "primergy",
+   "name": "Primergy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Oakland, CA",
+   "about": "Develops, owns, and operates utility-scale solar and storage.",
+   "careers": "https://primergysolar.com/careers/"
+  },
+  {
+   "id": "swift-current",
+   "name": "Swift Current Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Boston, MA",
+   "about": "Develops, owns, and operates wind, solar, and storage projects.",
+   "careers": "https://www.swiftcurrentenergy.com/careers"
+  },
+  {
+   "id": "treaty-oak",
+   "name": "Treaty Oak Clean Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Austin, TX",
+   "about": "Develops utility-scale solar and storage projects.",
+   "careers": "https://www.treatyoakcleanenergy.com/careers"
+  },
+  {
+   "id": "nexamp",
+   "name": "Nexamp",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Boston, MA",
+   "about": "Builds, owns, and operates community solar and storage.",
+   "careers": "https://www.nexamp.com/careers"
+  },
+  {
+   "id": "pivot-energy",
+   "name": "Pivot Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Denver, CO",
+   "about": "Develops community and commercial solar and storage.",
+   "careers": "https://www.pivotenergy.net/careers"
+  },
+  {
+   "id": "new-leaf-energy",
+   "name": "New Leaf Energy",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "Lowell, MA",
+   "about": "Develops solar, storage, and wind projects.",
+   "careers": "https://www.newleafenergy.com/careers"
+  },
+  {
+   "id": "brightnight",
+   "name": "BrightNight",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "about": "Develops hybrid solar, wind, and storage power projects.",
+   "careers": "https://brightnightpower.com/careers/"
+  },
+  {
+   "id": "intersect-power",
+   "name": "Intersect Power",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "US",
+   "about": "Develops large solar and storage projects, often paired with big electricity users.",
+   "careers": "https://intersectpower.com/careers/"
+  },
+  {
+   "id": "clearway",
+   "name": "Clearway Energy Group",
+   "type": "renewable",
+   "focus": "mixed",
+   "region": "US",
+   "hq": "San Francisco, CA",
+   "about": "Develops and operates wind, solar, and storage. Part-owned by TotalEnergies, an oil and gas company.",
+   "careers": "https://www.clearwayenergygroup.com/careers/"
+  },
+  {
+   "id": "transect",
+   "name": "Transect",
+   "type": "other",
+   "focus": "renewable",
+   "region": "US",
+   "hq": "San Antonio, TX",
+   "about": "Software that screens land for environmental and permitting risk, used mostly by renewable energy developers.",
+   "careers": "https://www.transect.com/careers"
+  },
+  {
+   "id": "audubon",
+   "name": "National Audubon Society",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "New York, NY",
+   "about": "Nonprofit that protects birds and the places they need, with science, policy, and on-the-ground conservation across the Americas. Has a large Florida program.",
+   "careers": "https://audubon.wd503.myworkdayjobs.com/Audubon"
+  },
+  {
+   "id": "smithsonian",
+   "name": "Smithsonian Institution",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Washington, DC",
+   "about": "Museum and research complex that includes tropical research, conservation biology, and environmental research centers.",
+   "careers": "https://www.si.edu/careers"
+  },
+  {
+   "id": "rewi",
+   "name": "Renewable Energy Wildlife Institute",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Washington, DC",
+   "about": "Nonprofit that brings together wind and solar companies, agencies, and conservation groups to study and reduce impacts on wildlife.",
+   "careers": "https://rewi.org/about/careers/"
+  },
+  {
+   "id": "tnc",
+   "name": "The Nature Conservancy",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Arlington, VA",
+   "about": "Global conservation nonprofit that protects land and water, with a program on siting renewable energy in low-impact places.",
+   "careers": "https://www.nature.org/en-us/about-us/careers/"
+  },
+  {
+   "id": "abc-birds",
+   "name": "American Bird Conservancy",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "about": "Nonprofit that conserves wild birds and their habitats across the Americas, including work on bird-smart wind energy.",
+   "careers": "https://abcbirds.org/about/careers/"
+  },
+  {
+   "id": "bat-conservation",
+   "name": "Bat Conservation International",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Austin, TX",
+   "about": "Nonprofit that works to end bat extinctions, including research on bats and wind energy.",
+   "careers": "https://www.batcon.org/about-us/careers/"
+  },
+  {
+   "id": "defenders",
+   "name": "Defenders of Wildlife",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Washington, DC",
+   "about": "Nonprofit focused on protecting native wildlife and habitat, with policy work on renewable energy siting.",
+   "careers": "https://defenders.org/careers"
+  },
+  {
+   "id": "american-farmland-trust",
+   "name": "American Farmland Trust",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Washington, DC",
+   "about": "Nonprofit that protects farmland, with remote solar specialist roles focused on siting solar well on farms.",
+   "careers": "https://farmland.org/careers/"
+  },
+  {
+   "id": "nwf",
+   "name": "National Wildlife Federation",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Reston, VA",
+   "about": "Large wildlife conservation nonprofit with regional programs across the US.",
+   "careers": "https://www.nwf.org/About-Us/Careers"
+  },
+  {
+   "id": "edf",
+   "name": "Environmental Defense Fund",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "New York, NY",
+   "about": "Environmental nonprofit that works on climate, energy, and ecosystems using science and economics.",
+   "careers": "https://www.edf.org/jobs"
+  },
+  {
+   "id": "mass-audubon",
+   "name": "Mass Audubon",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Lincoln, MA",
+   "about": "Massachusetts conservation nonprofit that runs wildlife sanctuaries and coastal bird protection programs.",
+   "careers": "https://www.massaudubon.org/about/careers"
+  },
+  {
+   "id": "esa",
+   "name": "Environmental Science Associates",
+   "type": "consulting",
+   "focus": "consulting",
+   "region": "US",
+   "hq": "San Francisco, CA",
+   "about": "Employee-owned environmental consulting firm that handles environmental review and permitting for solar, wind, and transmission projects.",
+   "careers": "https://job-boards.greenhouse.io/environmentalscienceassociates"
+  },
+  {
+   "id": "atwell",
+   "name": "Atwell",
+   "type": "consulting",
+   "focus": "consulting",
+   "region": "US",
+   "hq": "Southfield, MI",
+   "about": "Consulting, engineering, and construction services firm with a power and energy group that supports renewable projects.",
+   "careers": "https://job-boards.greenhouse.io/atwellgroup"
+  },
+  {
+   "id": "swca",
+   "name": "SWCA Environmental Consultants",
+   "type": "consulting",
+   "focus": "consulting",
+   "region": "US",
+   "hq": "Phoenix, AZ",
+   "about": "Employee-owned environmental consulting firm known for natural resources, permitting, and compliance work.",
+   "careers": "https://www.swca.com/careers"
+  },
+  {
+   "id": "dudek",
+   "name": "Dudek",
+   "type": "consulting",
+   "focus": "consulting",
+   "region": "US",
+   "hq": "Encinitas, CA",
+   "about": "Environmental and engineering consulting firm with an energy development and permitting practice.",
+   "careers": "https://dudek.com/careers/"
+  },
+  {
+   "id": "west-inc",
+   "name": "Western EcoSystems Technology (WEST)",
+   "type": "consulting",
+   "focus": "consulting",
+   "region": "US",
+   "hq": "Cheyenne, WY",
+   "about": "Environmental and statistical consulting firm that specializes in wildlife studies for wind and solar projects.",
+   "careers": "https://west-inc.com/careers/"
+  },
+  {
+   "id": "icf",
+   "name": "ICF",
+   "type": "consulting",
+   "focus": "consulting",
+   "region": "US",
+   "hq": "Reston, VA",
+   "about": "Large consulting firm with environmental planning, NEPA, and energy practices, and many remote roles.",
+   "careers": "https://www.icf.com/careers"
+  },
+  {
+   "id": "ccreee",
+   "name": "Caribbean Centre for Renewable Energy and Energy Efficiency",
+   "type": "renewable",
+   "focus": "renewable",
+   "region": "Caribbean",
+   "hq": "Bridgetown, Barbados",
+   "about": "Regional body that supports renewable energy and energy efficiency across Caribbean Community member states.",
+   "careers": "https://www.ccreee.org/vacancies/"
+  },
+  {
+   "id": "caribbean-development-bank",
+   "name": "Caribbean Development Bank",
+   "type": "other",
+   "focus": "mixed",
+   "region": "Caribbean",
+   "hq": "Bridgetown, Barbados",
+   "about": "Regional development bank based in Barbados that funds infrastructure, environment, and climate resilience projects.",
+   "careers": "https://www.caribank.org/work-with-us/careers"
+  },
+  {
+   "id": "sea-turtle-conservancy",
+   "name": "Sea Turtle Conservancy",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Gainesville, FL",
+   "about": "Sea turtle research and conservation group based in Florida, with long-running field programs in Costa Rica and Panama.",
+   "careers": "https://conserveturtles.org/employment/"
+  },
+  {
+   "id": "wcs",
+   "name": "Wildlife Conservation Society",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "New York, NY",
+   "about": "Global conservation group with field programs across Mesoamerica, including Belize, Guatemala, Honduras, and Nicaragua.",
+   "careers": "https://www.wcs.org/about-us/careers"
+  },
+  {
+   "id": "osa-conservation",
+   "name": "Osa Conservation",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "about": "Protects and restores rainforest, rivers, and wildlife on Costa Rica's Osa Peninsula, with field stations and restoration projects.",
+   "careers": "https://osaconservation.org/careers/"
+  },
+  {
+   "id": "rainforest-alliance",
+   "name": "Rainforest Alliance",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "New York, NY",
+   "about": "Works on forests, farming, and communities, with large programs in Guatemala and the rest of Central America.",
+   "careers": "https://www.rainforest-alliance.org/careers/"
+  },
+  {
+   "id": "conservation-international",
+   "name": "Conservation International",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Arlington, VA",
+   "about": "Global conservation group with country programs in Costa Rica and elsewhere in Latin America.",
+   "careers": "https://www.conservation.org/about/careers"
+  },
+  {
+   "id": "everglades-foundation",
+   "name": "The Everglades Foundation",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Palmetto Bay, FL",
+   "about": "South Florida nonprofit focused on restoring the Everglades through science, advocacy, and education.",
+   "careers": "https://www.evergladesfoundation.org/careers"
+  },
+  {
+   "id": "loggerhead-marinelife",
+   "name": "Loggerhead Marinelife Center",
+   "type": "conservation",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "Juno Beach, FL",
+   "about": "Sea turtle hospital, research, and beach monitoring center in Palm Beach County.",
+   "careers": "https://marinelife.org/careers/"
+  },
+  {
+   "id": "sfwmd",
+   "name": "South Florida Water Management District",
+   "type": "other",
+   "focus": "conservation",
+   "region": "US",
+   "hq": "West Palm Beach, FL",
+   "about": "State agency that manages water and leads Everglades restoration projects across South Florida.",
+   "careers": "https://www.sfwmd.gov/careers"
+  }
+ ]
+}

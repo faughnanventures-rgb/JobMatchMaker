@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
+<title>Remote roles watch</title>
+<meta name="theme-color" content="#EEF0DC">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Roles watch">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to the job list</a>
+<div class="wrap">
+  <header class="top">
+    <h1 id="top" tabindex="-1">Remote roles watch</h1>
+    <p id="summary">Loading the latest check.</p>
+    <nav class="views" aria-label="Sections">
+      <button type="button" data-action="view" data-view="jobs" aria-pressed="true">Jobs</button>
+      <button type="button" data-action="view" data-view="companies" aria-pressed="false">Companies</button>
+      <button type="button" data-action="view" data-view="docs" aria-pressed="false">Documents</button>
+    </nav>
+  </header>
+  <div class="runline">
+    <button type="button" class="btn" id="runBtn" data-action="runNow">Check for new jobs now</button>
+    <span id="runMsg" role="status"></span>
+    <div id="runBar" hidden><progress id="runProg" max="100" value="0" aria-label="Progress of the job check"></progress></div>
+  </div>
+  <div id="notice"></div>
+  <p id="live" class="sr" role="status" aria-live="polite"></p>
+
+  <main id="main" tabindex="-1">
+    <section id="jobsView" aria-labelledby="jobsH">
+      <h2 id="jobsH" class="sr">Jobs</h2>
+      <div class="tabs" id="tabs" role="group" aria-label="Job lists"></div>
+      <details class="filt" id="filt"><summary>Filter and sort</summary><div class="filters">
+        <label>Employer <select id="fType">
+          <option value="">All</option><option value="renewable">Renewable energy</option><option value="conservation">Conservation and research</option>
+          <option value="consulting">Consulting</option><option value="other">Other</option>
+        </select></label>
+        <label>Where <select id="fRemote">
+          <option value="">Anywhere</option><option value="full">Fully remote</option><option value="preferred">Remote, location preferred</option><option value="restricted">Remote, location required</option>
+          <option value="local">South Florida site work</option><option value="abroad">Central America</option><option value="barbados">Barbados and Caribbean</option>
+        </select></label>
+        <label>Job type <select id="fEmp"><option value="">Any</option><option value="employee">Employee</option><option value="contract">Contract</option></select></label>
+        <label>Pay at least, in dollars <input type="number" id="fMin" min="0" step="5000" inputmode="numeric"></label>
+        <label class="check"><input type="checkbox" id="fBoards" checked> Job board listings</label>
+        <label class="check"><input type="checkbox" id="fPay"> Pay listed</label>
+        <label class="check"><input type="checkbox" id="fStar"> Starred companies</label>
+        <label>Sort <select id="fSort"><option value="new">Newest</option><option value="pay">Highest pay</option><option value="star">Starred first</option><option value="due">Closing soonest</option></select></label>
+      </div></details>
+      <div class="sheet">
+        <div class="sheet-head" aria-hidden="true">
+          <div>Open and deadline</div><div>Company</div><div>Job</div><div>Pay</div><div>Where</div><div>Why it fits</div><div>Concerns</div><div>Your status</div>
+        </div>
+        <div id="rows"></div>
+      </div>
+    </section>
+
+    <section id="companiesView" aria-labelledby="coH" hidden>
+      <h2 id="coH">Companies being watched</h2>
+      <p class="lede">Star a company to mark it as a favorite. Its jobs get a star and can be sorted to the top. Block a company to stop seeing its jobs.</p>
+      <div class="sheet" id="coRows"></div>
+      <h2 id="manualH" tabindex="-1">Sites to check yourself</h2>
+      <p class="lede">These employers' sites can't be read automatically, so their jobs will not show up on this dashboard. Open each one every week or two and look for yourself. Tap "I checked this" to keep track of when you last looked.</p>
+      <ul id="manualList" class="manual"></ul>
+      <h2>Add or fix a company</h2>
+      <p class="lede">Paste a company's careers page link and check it. If the check can read jobs from it, save it to the watch list. To fix a company that could not be read, use its Fix link button above.</p>
+      <div class="req">
+        <input type="hidden" id="vId">
+        <label class="grow">Company name <input id="vName" autocomplete="off" maxlength="120"></label>
+        <label class="grow">Careers page link <input id="vUrl" type="url" autocomplete="off" maxlength="500" inputmode="url"></label>
+        <label>Type <select id="vType"><option value="renewable">Renewable energy</option><option value="conservation">Conservation and research</option><option value="consulting">Consulting</option><option value="other">Other</option></select></label>
+        <button type="button" class="btn" data-action="checkLink">Check this link</button>
+        <button type="button" class="btn" id="vSave" data-action="saveCompany" disabled>Save to the watch list</button>
+      </div>
+      <p id="vMsg" role="status"></p>
+      <h2>Ask to add a company</h2>
+      <p class="lede">New companies are added by whoever maintains this site. Requests are saved in this browser, so copy the list and send it to them.</p>
+      <div class="req">
+        <label class="grow">Company name <input id="reqName" autocomplete="off" maxlength="120"></label>
+        <label class="grow">Careers page link, if you have it <input id="reqUrl" type="url" autocomplete="off" maxlength="300"></label>
+        <button type="button" class="btn" data-action="addReq">Add to requests</button>
+        <button type="button" class="btn quiet" data-action="copyReq">Copy requests</button>
+      </div>
+      <ul class="reqlist" id="reqList"></ul>
+      <h2>Site check</h2>
+      <div id="health"></div>
+    </section>
+
+    <section id="docsView" aria-labelledby="docH" hidden>
+      <h2 id="docH">Base resume and cover letter</h2>
+      <p class="lede">Paste the plain text of your standard resume and cover letter. The Draft tailored versions button on each job starts from these. They are saved in this browser only.</p>
+      <div class="base">
+        <div><label for="baseResume">Base resume</label><textarea id="baseResume" maxlength="30000"></textarea></div>
+        <div><label for="baseCover">Base cover letter</label><textarea id="baseCover" maxlength="30000"></textarea></div>
+      </div>
+      <h2>Saved versions</h2>
+      <p class="lede">Add each resume and cover letter version you send, then pick the one you used on each job. Files stay in this browser on this device. They are not uploaded to the site.</p>
+      <div class="req">
+        <label>Type <select id="docKind"><option value="resume">Resume</option><option value="cover">Cover letter</option></select></label>
+        <label class="grow">Version name <input id="docLabel" autocomplete="off" maxlength="120" aria-describedby="docHint"></label>
+        <button type="button" class="btn" data-action="pickDoc">Choose a file to add</button>
+        <input type="file" id="docFile" accept=".pdf,.doc,.docx,.txt,.md,.rtf" hidden>
+      </div>
+      <p class="sub" id="docHint">Give the version a name first, for example Permitting focus. Files up to 10 MB.</p>
+      <div class="sheet" id="docRows"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Your stars, statuses, and notes are saved in this browser only. Save a backup to move them to another device. The backup file includes your base resume text, so keep it somewhere private.</p>
+    <button type="button" class="btn" data-action="export">Save a backup</button>
+    <button type="button" class="btn quiet" data-action="import">Load a backup</button>
+    <button type="button" class="btn quiet" data-action="install">Add to home screen</button>
+    <button type="button" class="btn quiet" data-action="diag" aria-expanded="false" aria-controls="diagWrap">Show problem report</button>
+    <input type="file" id="importFile" accept="application/json,.json" hidden>
+    <p id="ioMsg" class="sub" role="status"></p>
+    <div id="diagWrap" hidden>
+      <label for="diagBox">Problem report. It lists recent errors and what the site's functions answered. It holds no notes, resume text, or passcode.</label>
+      <textarea id="diagBox" class="badlist" readonly rows="10"></textarea>
+      <p><button type="button" class="btn" data-action="copyDiag">Copy this report</button></p>
+    </div>
+  </footer>
+</div>
+
+<dialog id="coDialog" aria-label="About this company"></dialog>
+<dialog id="installDialog" aria-label="Add to home screen"></dialog>
+<dialog id="tailorDialog" class="tailor" aria-label="Draft tailored versions"></dialog>
+<script src="app.js" defer></script>
+</body>
+</html>
