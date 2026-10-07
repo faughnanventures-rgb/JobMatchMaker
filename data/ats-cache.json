@@ -1,1 +1,99 @@
-{}
+{
+ "plus-power": {
+  "ats": "greenhouse",
+  "token": "pluspower",
+  "from": "https://job-boards.greenhouse.io/pluspower"
+ },
+ "grid-united": {
+  "ats": "breezy",
+  "token": "grid-united",
+  "from": "https://grid-united.breezy.hr"
+ },
+ "madison-energy": {
+  "ats": "greenhouse",
+  "token": "madisonenergyinfrastructure",
+  "from": "https://job-boards.greenhouse.io/madisonenergyinfrastructure"
+ },
+ "cypress-creek": {
+  "ats": "greenhouse",
+  "token": "cypresscreekrenewables",
+  "from": "https://ccrenew.com/careers/"
+ },
+ "renewable-properties": {
+  "ats": "breezy",
+  "token": "renewable-properties",
+  "from": "https://www.renewprop.com/careers"
+ },
+ "origis-energy": {
+  "ats": "greenhouse",
+  "token": "origisenergy",
+  "from": "https://origisenergy.com/careers/"
+ },
+ "pattern-energy": {
+  "ats": "icims",
+  "host": "careers-patternenergy.icims.com",
+  "from": "https://patternenergy.com/careers/"
+ },
+ "nexamp": {
+  "ats": "greenhouse",
+  "token": "nexamp",
+  "from": "https://www.nexamp.com/careers"
+ },
+ "new-leaf-energy": {
+  "ats": "greenhouse",
+  "token": "newleafenergy",
+  "from": "https://www.newleafenergy.com/careers"
+ },
+ "clearway": {
+  "ats": "greenhouse",
+  "token": "clearwayjobs",
+  "from": "https://www.clearwayenergygroup.com/careers/"
+ },
+ "audubon": {
+  "ats": "workday",
+  "host": "audubon.wd503.myworkdayjobs.com",
+  "tenant": "audubon",
+  "site": "Audubon",
+  "from": "https://audubon.wd503.myworkdayjobs.com/Audubon"
+ },
+ "abc-birds": {
+  "ats": "paylocity",
+  "token": "13afa810-5782-4e0f-bd66-ca1861e6a9df",
+  "from": "https://abcbirds.org/about/careers/"
+ },
+ "nwf": {
+  "ats": "ukg",
+  "host": "recruiting.ultipro.com",
+  "tenant": "NAT1047NWF",
+  "board": "1ca8346a-33cc-401d-90d9-d7f752fdfd7d",
+  "from": "https://www.nwf.org/About-Us/Careers"
+ },
+ "mass-audubon": {
+  "ats": "adp",
+  "cid": "6044bc19-19e6-443a-8a51-62fe8af33798",
+  "ccId": "19000101_000001",
+  "from": "https://www.massaudubon.org/about/careers"
+ },
+ "esa": {
+  "ats": "greenhouse",
+  "token": "environmentalscienceassociates",
+  "from": "https://job-boards.greenhouse.io/environmentalscienceassociates"
+ },
+ "atwell": {
+  "ats": "greenhouse",
+  "token": "atwellgroup",
+  "from": "https://job-boards.greenhouse.io/atwellgroup"
+ },
+ "swca": {
+  "ats": "icims",
+  "host": "careers-swca.icims.com",
+  "from": "https://careers-swca.icims.com/jobs/search"
+ },
+ "rainforest-alliance": {
+  "ats": "ukg",
+  "host": "recruiting.ultipro.com",
+  "tenant": "RAI1015FORES",
+  "board": "7a1c3d86-f0fa-4e0e-a501-dcfedd4f7d8c",
+  "from": "https://www.rainforest-alliance.org/careers/"
+ }
+}

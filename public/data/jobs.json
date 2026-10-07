@@ -1,6 +1,44 @@
 {
- "sample": true,
- "generatedAt": "2026-10-03T21:00:00Z",
+ "boards": [
+  {
+   "name": "Remotive",
+   "ok": true,
+   "postings": 96,
+   "matched": 0,
+   "dropped": {
+    "not a match for the role keywords": 96
+   }
+  },
+  {
+   "name": "Jobicy",
+   "ok": true,
+   "postings": 76,
+   "matched": 0,
+   "dropped": {
+    "not a match for the role keywords": 76
+   }
+  },
+  {
+   "name": "Working Nomads",
+   "ok": true,
+   "postings": 23,
+   "matched": 0,
+   "dropped": {
+    "not a match for the role keywords": 23
+   }
+  },
+  {
+   "name": "Adzuna",
+   "ok": true,
+   "off": "Not set up. Needs a free Adzuna key."
+  },
+  {
+   "name": "USAJOBS",
+   "ok": true,
+   "off": "Not set up. Needs a free USAJOBS key."
+  }
+ ],
+ "generatedAt": "2026-10-07T17:56:54.908Z",
  "profile": {
   "minBase": 80000,
   "contractMinHourly": 55
@@ -8,235 +46,293 @@
  "health": [
   {
    "companyId": "174-power-global",
-   "ok": true,
-   "method": "greenhouse",
-   "postings": 1,
-   "matched": 1
+   "ok": false,
+   "error": "Page not found (HTTP 404 from boards-api.greenhouse.io). The link needs updating."
   },
   {
    "companyId": "plus-power",
    "ok": true,
    "method": "greenhouse",
-   "postings": 5,
+   "postings": 6,
    "matched": 0
   },
   {
    "companyId": "grid-united",
    "ok": true,
    "method": "breezy",
+   "postings": 3,
+   "matched": 0
+  },
+  {
+   "companyId": "madison-energy",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 10,
+   "matched": 0
+  },
+  {
+   "companyId": "cypress-creek",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 15,
+   "matched": 0
+  },
+  {
+   "companyId": "renewable-properties",
+   "ok": true,
+   "method": "breezy",
+   "postings": 0,
+   "matched": 0
+  },
+  {
+   "companyId": "origis-energy",
+   "ok": true,
+   "method": "greenhouse",
    "postings": 14,
    "matched": 0
   },
   {
-   "companyId": "audubon",
+   "companyId": "longroad-energy",
    "ok": false,
-   "error": "Not read during the manual test. The scheduled check reads this site's job feed directly."
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "pattern-energy",
+   "ok": true,
+   "method": "icims",
+   "postings": 7,
+   "matched": 0
+  },
+  {
+   "companyId": "apex-clean-energy",
+   "ok": false,
+   "error": "Uses ADP, which this check cannot read yet."
+  },
+  {
+   "companyId": "scout-clean-energy",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "leeward",
+   "ok": false,
+   "error": "Page not found (HTTP 404 from www.leewardenergy.com). The link needs updating."
+  },
+  {
+   "companyId": "arevon",
+   "ok": true,
+   "method": "job links on the page",
+   "postings": 1,
+   "matched": 0
+  },
+  {
+   "companyId": "primergy",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "swift-current",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "treaty-oak",
+   "ok": false,
+   "error": "Page not found (HTTP 404 from www.treatyoakcleanenergy.com). The link needs updating."
+  },
+  {
+   "companyId": "nexamp",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 44,
+   "matched": 0
+  },
+  {
+   "companyId": "pivot-energy",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "new-leaf-energy",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 19,
+   "matched": 0
+  },
+  {
+   "companyId": "brightnight",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "intersect-power",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "clearway",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 53,
+   "matched": 0
+  },
+  {
+   "companyId": "transect",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "audubon",
+   "ok": true,
+   "method": "workday",
+   "postings": 8,
+   "matched": 1
+  },
+  {
+   "companyId": "smithsonian",
+   "ok": false,
+   "error": "The site blocked the check (HTTP 403 from www.si.edu)"
+  },
+  {
+   "companyId": "rewi",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "tnc",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "abc-birds",
+   "ok": true,
+   "method": "paylocity",
+   "postings": 0,
+   "matched": 0
+  },
+  {
+   "companyId": "bat-conservation",
+   "ok": false,
+   "error": "The site blocked the check (HTTP 403 from www.batcon.org)"
+  },
+  {
+   "companyId": "defenders",
+   "ok": false,
+   "error": "Uses ADP, which this check cannot read yet."
+  },
+  {
+   "companyId": "american-farmland-trust",
+   "ok": false,
+   "error": "The site blocked the check (HTTP 403 from farmland.org)"
+  },
+  {
+   "companyId": "nwf",
+   "ok": true,
+   "method": "ukg",
+   "postings": 3,
+   "matched": 3
+  },
+  {
+   "companyId": "edf",
+   "ok": false,
+   "error": "HTTP 422 from osv-edf.wd5.myworkdayjobs.com"
+  },
+  {
+   "companyId": "mass-audubon",
+   "ok": true,
+   "method": "adp",
+   "postings": 4,
+   "matched": 0
+  },
+  {
+   "companyId": "esa",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 26,
+   "matched": 1
+  },
+  {
+   "companyId": "atwell",
+   "ok": true,
+   "method": "greenhouse",
+   "postings": 188,
+   "matched": 0
+  },
+  {
+   "companyId": "swca",
+   "ok": true,
+   "method": "icims",
+   "postings": 30,
+   "matched": 2
   },
   {
    "companyId": "dudek",
    "ok": false,
-   "error": "Not read during the manual test."
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
   },
   {
-   "companyId": "cypress-creek",
+   "companyId": "west-inc",
    "ok": false,
-   "error": "Not read during the manual test."
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
   },
   {
-   "companyId": "renewable-properties",
+   "companyId": "icf",
    "ok": false,
-   "error": "Not read during the manual test."
-  }
- ],
- "jobs": [
-  {
-   "id": "174-power-global:4014040009",
-   "companyId": "174-power-global",
-   "title": "Permitting Manager",
-   "url": "https://job-boards.greenhouse.io/174powerglobal/jobs/4014040009",
-   "posted": null,
-   "firstSeen": "2026-10-03",
-   "lastSeen": "2026-10-03",
-   "closed": false,
-   "verified": true,
-   "employment": "employee",
-   "pay": {
-    "min": 130000,
-    "max": 165000,
-    "unit": "year",
-    "text": "$130,000 to $165,000"
-   },
-   "remote": {
-    "level": "restricted",
-    "note": "The ideal candidate will be within commutable distance to the Houston, TX office. The posting says remote work may be possible."
-   },
-   "fit": [
-    "permitting",
-    "solar"
-   ],
-   "concerns": [
-    "Asks for 4+ years in renewable energy, more than you have in that sector.",
-    "Remote with a location requirement. Check that Florida qualifies.",
-    "Permitting is the core of the job.",
-    "Company or its parent has business outside clean energy. Check against your no fossil fuels rule."
-   ],
-   "score": 6,
-   "closes": null,
-   "closesNote": null
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
   },
   {
-   "id": "dudek:sample-1",
-   "companyId": "dudek",
-   "title": "Senior Project Manager, Energy Development and Permitting",
-   "url": "https://dudek.com/careers/",
-   "posted": null,
-   "firstSeen": "2026-10-03",
-   "lastSeen": "2026-10-03",
-   "closed": false,
-   "verified": false,
-   "employment": "employee",
-   "pay": {
-    "min": 100000,
-    "max": 180000,
-    "unit": "year",
-    "text": "$100,000 to $180,000"
-   },
-   "remote": {
-    "level": "full",
-    "note": ""
-   },
-   "fit": [
-    "permitting"
-   ],
-   "concerns": [
-    "Permitting is the core of the job.",
-    "Consulting firm, so expect billable hours and mixed clients."
-   ],
-   "score": 5,
-   "closes": null,
-   "closesNote": null
+   "companyId": "ccreee",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
   },
   {
-   "id": "audubon:sample-1",
-   "companyId": "audubon",
-   "title": "Policy Specialist, Everglades",
-   "url": "https://audubon.wd503.myworkdayjobs.com/Audubon",
-   "posted": null,
-   "firstSeen": "2026-10-03",
-   "lastSeen": "2026-10-03",
-   "closed": false,
-   "verified": false,
-   "employment": "employee",
-   "pay": {
-    "min": 75000,
-    "max": 89000,
-    "unit": "year",
-    "text": "$75,000 to $89,000"
-   },
-   "remote": {
-    "level": "full",
-    "note": "Listed location: Audubon Florida, remote."
-   },
-   "fit": [
-    "wetlands and Section 404",
-    "agency consultation"
-   ],
-   "concerns": [
-    "Low end of the range is under your $80,000 floor.",
-    "Policy and advocacy work more than field science."
-   ],
-   "score": 5,
-   "closes": null,
-   "closesNote": null
+   "companyId": "caribbean-development-bank",
+   "ok": false,
+   "error": "Uses SuccessFactors, which this check cannot read yet."
   },
   {
-   "id": "audubon:sample-2",
-   "companyId": "audubon",
-   "title": "Science lead, Lake Okeechobee and Northern Everglades",
-   "url": "https://audubon.wd503.myworkdayjobs.com/Audubon",
-   "posted": null,
-   "firstSeen": "2026-10-03",
-   "lastSeen": "2026-10-03",
-   "closed": false,
-   "verified": false,
-   "employment": "employee",
-   "pay": null,
-   "remote": {
-    "level": "full",
-    "note": "Listed location: Audubon Florida, in-office or remote."
-   },
-   "fit": [
-    "wetlands and Section 404",
-    "wildlife",
-    "agency consultation"
-   ],
-   "concerns": [
-    "Pay not listed.",
-    "The listing found was months old, so it may be filled.",
-    "Leans on hydrology and water policy more than wildlife."
-   ],
-   "score": 7,
-   "closes": null,
-   "closesNote": null
+   "companyId": "sea-turtle-conservancy",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
   },
   {
-   "id": "cypress-creek:sample-1",
-   "companyId": "cypress-creek",
-   "title": "Senior Manager or Associate Director, Environmental Affairs",
-   "url": "https://ccrenew.com/careers/",
-   "posted": null,
-   "firstSeen": "2026-10-03",
-   "lastSeen": "2026-10-03",
-   "closed": false,
-   "verified": false,
-   "employment": "employee",
-   "pay": null,
-   "remote": {
-    "level": "full",
-    "note": ""
-   },
-   "fit": [
-    "solar",
-    "permitting"
-   ],
-   "concerns": [
-    "Pay not listed.",
-    "Senior title. May expect people management."
-   ],
-   "score": 6,
-   "closes": null,
-   "closesNote": null
+   "companyId": "wcs",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
   },
   {
-   "id": "renewable-properties:sample-1",
-   "companyId": "renewable-properties",
-   "title": "Permitting Manager",
-   "url": "https://www.renewprop.com/careers",
-   "posted": null,
-   "firstSeen": "2026-10-03",
-   "lastSeen": "2026-10-03",
-   "closed": false,
-   "verified": false,
-   "employment": "employee",
-   "pay": null,
-   "remote": {
-    "level": "preferred",
-    "note": "Remote possible. The role focuses on projects in the western United States."
-   },
-   "fit": [
-    "solar",
-    "permitting",
-    "wildlife"
-   ],
-   "concerns": [
-    "Pay not listed.",
-    "Asks for 5+ years in renewable energy, more than you have in that sector.",
-    "Remote, but a location is listed or preferred.",
-    "Permitting is the core of the job."
-   ],
-   "score": 6,
-   "closes": null,
-   "closesNote": null
+   "companyId": "osa-conservation",
+   "ok": true,
+   "method": "job links on the page",
+   "postings": 3,
+   "matched": 0
+  },
+  {
+   "companyId": "rainforest-alliance",
+   "ok": true,
+   "method": "ukg",
+   "postings": 1,
+   "matched": 0
+  },
+  {
+   "companyId": "conservation-international",
+   "ok": false,
+   "error": "Uses Taleo, which this check cannot read yet."
+  },
+  {
+   "companyId": "everglades-foundation",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
+  },
+  {
+   "companyId": "loggerhead-marinelife",
+   "ok": false,
+   "error": "The site blocked the check (HTTP 403 from marinelife.org)"
+  },
+  {
+   "companyId": "sfwmd",
+   "ok": false,
+   "error": "Could not tell which hiring system this careers page uses. Add its job board link to companies.json."
   }
  ],
  "companies": [
@@ -604,7 +700,7 @@
    "region": "US",
    "hq": "Phoenix, AZ",
    "about": "Employee-owned environmental consulting firm known for natural resources, permitting, and compliance work.",
-   "careers": "https://www.swca.com/careers"
+   "careers": "https://careers-swca.icims.com/jobs/search"
   },
   {
    "id": "dudek",
@@ -734,6 +830,270 @@
    "hq": "West Palm Beach, FL",
    "about": "State agency that manages water and leads Everglades restoration projects across South Florida.",
    "careers": "https://www.sfwmd.gov/careers"
+  }
+ ],
+ "jobs": [
+  {
+   "id": "audubon:JR1193",
+   "companyId": "audubon",
+   "title": "Policy Specialist, Everglades",
+   "url": "https://audubon.wd503.myworkdayjobs.com/Audubon/job/Audubon-Florida---Remote/Policy-Specialist--Everglades_JR1193-1",
+   "posted": "2026-08-27",
+   "closes": null,
+   "closesNote": null,
+   "pay": {
+    "min": 75526,
+    "max": 89000,
+    "unit": "year",
+    "text": "$75,526 to $89,000"
+   },
+   "employment": "employee",
+   "remote": {
+    "level": "full",
+    "note": "Listed location: Audubon Florida - Remote, Audubon Florida - Remote. This position is remote in Southeast Florida, and the successful candidate must live in Martin, Palm Beach, Broward or Miami-Dade counties."
+   },
+   "fit": [
+    "endangered species and ESA",
+    "wildlife",
+    "wetlands and Section 404",
+    "habitat restoration"
+   ],
+   "concerns": [
+    "Low end of the range is under your $80,000 floor.",
+    "Posted 41 days ago. May be close to filled."
+   ],
+   "score": 6,
+   "verified": true,
+   "jd": "About Audubon\nThe National Audubon Society is a leading nonprofit conservation organization with 120 years of science-based, community-driven impact, dedicated to protecting birds and the places they need, today and tomorrow. Birds are powerful indicators of our planet’s health, acting as sentinels that warn us of environmental change and inspire action. Audubon works across the Western Hemisphere, driven by the understanding that what is good for birds is good for the planet. Through a collaborative, bipartisan approach across habitats, borders, and the political spectrum, Audubon drives meaningful and lasting conservation outcomes. With 800 staff and over 1.9 million supporters, Audubon is a dynamic and ever-growing force committed to ensuring a better planet for both birds and people for generations to come. Learn more at www.audubon.org and on Facebook, Twitter and Instagram @audubonsociety.\nPosition Summary :\nThe National Audubon Society has identified the Everglades as a national conservation priority and a centerpiece of Audubon’s hemispheric water strategy. The Greater Everglades Ecosystem supports 70 threatened and endangered species and is home to more than 8 million people. Everglades restoration is the world’s largest ecosystem restoration program and ensuring effective implementation of this program is one of our key priorities. Restoration is complemented by efforts to reducing nutrient pollution and other threats to the Everglades through science-based water policy initiatives.\nAligned with Audubon’s overall conservation goals and strategies and in coordination with the Policy Director of Everglades, this person will oversee the continued strategic and measurable implementation of conservation goals in the Greater Everglades that results in the organization’s increased capacity to protect priority birds and their habitats.\nThis position is remote in Southeast Florida, and the successful candidate must live in Martin, Palm Beach, Broward or Miami-Dade counties. If the successful candidate lives within 40 miles of our Miami office, they will be hybrid and if they are outside of the 40 miles but in those counties, they will be remote.\n\"Where We Work\" Policy\nRemote work within the United States may be considered only for employees not within commuting distance (40 miles or less) of an Audubon office, in accordance with Audubon’s “Where We Work” Policy. Hybrid employees are expected to work in an Audubon office every Monday and Tuesday and an additional two days each month of the employees’ choosing.\nCompensation:\n$75,526 - $89,000 / year\nAdditional Job Description\nEssential Functions\nPlay an essential role in advancing Audubon’s Everglades policy goals and objectives by researching, analyzing, and providing guidance on Everglades issues.\nAdvise the Senior Policy Manager, Everglades on potential State and Federal legislative and administrative priorities, opportunities and risks.\nResearch and analyze existing water and agricultural Florida Statutes, rules, and regulations, and advise potential improvements that result in implementing Audubon’s Everglades policy goals.\nPrepare high quality analysis on restoration project Environmental Impact Statements and other on restoration programs related to the Everglades.\nDraft fact sheets, comment letters, testimony, and other materials necessary to support Audubon’s Everglades policy goals and priorities.\nLead in developing and implementing advocacy strategies for the Everglades.\nDevelop working relationships with leadership and key staff at the Florida Department of Environmental Protection and South Florida Water Management District in order to communicate Audubon’s Everglades priorities and influence policy outcomes.\nCoordinate with Audubon’s science team members across the Everglades.\nIdentify and recruit strategic allies to help spread Audubon’s key Everglades policy goals.\nRepresent Audubon at Everglades-related public meetings and issued-based coalitions; monitor developments and contribute to coalition-based legislative positions that support Audubon’s key policy priorities.\nMaintain and foster culture of safety.\nOther job-related duties as assigned.\nQualifications and Experience:\nBachelor’s degree in policy, political science, biology or related field required.\nA minimum of 5 years of experience with a policy-oriented nonprofit organization, or with a relevant government agency working on water management, environmental regulations, or similar is required. An equivalent combination of education and work experience will also be considered.\nKnowledge of Florida water statutes, rules, and regulations.\nExcellent policy analysis and research skills.\nExcellent communications skills with ability to write clearly and command of public speaking; must be comfortable representing Audubon’s interests with a variety of stakeholders, including decision-makers at multiple agencies, NGO partners, and lay audiences.\nExperience working with agencies such as the South Florida Water Management District, U.S. Army Corps of Engineers, Florida Fish and Wildlife Conservation Commission, and Florida Department of Environmental Protection preferred\nSelf-starter and results-oriented with a demonstrated ability to work independently and in coordination with multiple team players.\nProficiency with Microsoft Office applications required, familiarity with social media tools a plus.\nAble to travel and attend occasional external functions occurring on weekends and evenings.\nA valid driver’s license.\nExperience fostering inclusive and collaborative work environments is valued.\nCommitment to Audubon’s organizational values of care, collaboration, change, integrity, impact, and innovation.\nThis position will require tracking of lobbying time and ongoing compliance with all applicable federal, state, and organizational lobbying and ethics requirements. The position may require registration as a lobbyist. The selected candidate must be willing and able to complete…",
+   "firstSeen": "2026-10-07",
+   "lastSeen": "2026-10-07",
+   "closed": false
+  },
+  {
+   "id": "nwf:f458e7a1-c85f-408e-84ca-f75f8c72f1a9",
+   "companyId": "nwf",
+   "title": "Conservation Science Fellow",
+   "url": "https://recruiting.ultipro.com/NAT1047NWF/JobBoard/1ca8346a-33cc-401d-90d9-d7f752fdfd7d/OpportunityDetail?opportunityId=f458e7a1-c85f-408e-84ca-f75f8c72f1a9",
+   "posted": "2026-09-25",
+   "closes": null,
+   "closesNote": "Open until filled",
+   "pay": {
+    "min": 20,
+    "max": 25,
+    "unit": "hour",
+    "text": "$20 to $25 an hour"
+   },
+   "employment": "employee",
+   "remote": {
+    "level": "preferred",
+    "note": "Listed location: DC."
+   },
+   "fit": [
+    "wildlife",
+    "habitat restoration"
+   ],
+   "concerns": [
+    "Remote, but a location is listed or preferred."
+   ],
+   "score": 4,
+   "verified": true,
+   "jd": "Founded in 1936, the National Wildlife Federation has grown into America's largest and most trusted grassroots conservation organization with 50+ state/territorial affiliates and more than six million members and supporters, including hunters, anglers, gardeners, birders, hikers, campers, paddlers, and outdoor enthusiasts of all ages and stripes. The mission of the National Wildlife Federation is to unite all Americans to ensure people and wildlife thrive in our rapidly changing world. We advance this mission through programming focused on conserving wildlife, restoring habitats and waterways, expanding outdoor opportunities, connecting children with nature, advancing environmental justice, and addressing the causes and consequences of climate change.\nTo support our mission, we are seeking a Conservation Science Fellow to join our Science team, reporting to the Chief Scientist. This team provides scientific leadership and support on wildlife conservation and policy issues, and supports the organization's commitment to using the best available science in its work on policy, advocacy, conservation, education, and communications. The Fellow will support the Federation's initiatives in One Health and related science-based approaches to ensuring that people and wildlife can thrive together in a rapidly changing environment.\nThis position is part of NWF's fellowship program. NWF Fellows must be available to work a full-time schedule. This 11-month position offers $20-$25 per hour plus core benefits.\nPrinciple Duties (major areas of responsibility):\nSynthesize and translate credible sources of scientific information on One Health-related topics for NWF staff, affiliates, and the public.\nConsult with experts in academic research, Indigenous Knowledges, Traditional Ecological Knowledge, and Community Science to reference and communicate multiple knowledges related to One Health.\nCommunicate with and across teams, Directors of Conservation Partnerships, and affiliates of NWF to facilitate Federation-wide conservation strategies that improve human, wildlife, and environmental health.\nIndependently and in collaboration with NWF staff, research, write, and edit reports, peer-reviewed papers, factsheets, blogs, and other publicly disseminated content on One Health and related topics.\nFacilitate One Health conservation legislative priorities and advance initiatives at the intersection of human, wildlife, and environmental health by creating science-based informational and advocacy materials.\nParticipate in and support engagement with partner organizations and policymakers, including members of Congress and their staff, and assist with legislative fly-ins, workshops, outreach, and events when needed.\nOther administrative and programmatic support for the Chief Scientist as assigned\nQualifications:\nBachelor's or graduate degree or equivalent experience in Biology/Ecology, Environmental Science, Sustainability, Natural Resource Management, Public Health, or a related field.\nDemonstrated knowledge and commitment to wildlife conservation and climate change issues.\nDemonstrated commitment to environmental justice.\nBroad understanding of the scope of natural, social, health, and traditional sciences related to One Health, e.g. interactions between nature exposure and human health; wildlife diseases and zoonotic spillover; health risks related to climate change; impacts of air and water pollutants on human and non-human health; and/or Traditional Ecological Knowledge of human-environment-wildlife interactions.\nAbility to synthesize and communicate scientific or technical material to a wide range of audiences. Original writing and editing samples may be requested.\nAbility and willingness to perform support tasks for a high-performing professional team.\nStrong initiative and ability to manage tasks independently.\nDemonstrated ability to coordinate and/or manage multiple projects at once.\nAbility to work collaboratively with peers (including remotely and in a virtual setting), and to develop positive working relationships.\nStrong work ethic and time management skills.\nApplicants are invited to learn more about National Wildlife Federation's required equity competencies at https://www.nwf.org/About-Us/Careers .\nTravel Requirements:\nThis position does not require travel.\nLocation and Work Mode:\nThis position will be hybrid or fully remote. The National Wildlife Federation is committed to a flexible and empowered work environment with an authentic community of care for all staff. In this position, the employee may work partly or fully at a physical office of the National Wildlife Federation to be decided jointly with their supervisor in the final stages of the interview process. For more information on Work Modes, please review the benefits section of our careers page: https://www.nwf.org/About-Us/Careers\nPhysical Requirements of the Job:\nCognitive & Intellectual Requirements:\nAbility to understand , analyze , and apply complex information, policies, and concepts\nAbility to exercise sound judgment, problem-solve, and make decisions in situations involving ambiguity or competing priorities\nAbility to maintain focus and sustained attention and manage multiple tasks or work-streams\nAbility to listen , interpret , and respond appropriately in discussions with colleagues, leadership, and external stakeholders\nPhysical Requirements\nAbility to remain in a stationary position for extended periods of time while working at a computer or attending meetings\nAbility to operate standard office equipment, including computers, keyboards, monitors, telephones, and video conferencing tools\nAbility to communicate and exchange information in person, via telephone, and through electronic or virtual platforms\nAbility to read , review, and produce written and electronic documents, including prolonged use of computer screens\nAbility to move within an office or remote work environment to access files, meetings, or equipment as needed\nWork E…",
+   "firstSeen": "2026-10-07",
+   "lastSeen": "2026-10-07",
+   "closed": false
+  },
+  {
+   "id": "nwf:86237332-2161-4f7c-b6e2-7cd91295c3dc",
+   "companyId": "nwf",
+   "title": "Policy Specialist, Resilient Coasts and Floodplains",
+   "url": "https://recruiting.ultipro.com/NAT1047NWF/JobBoard/1ca8346a-33cc-401d-90d9-d7f752fdfd7d/OpportunityDetail?opportunityId=86237332-2161-4f7c-b6e2-7cd91295c3dc",
+   "posted": "2026-09-25",
+   "closes": null,
+   "closesNote": "Open until filled",
+   "pay": {
+    "min": 70000,
+    "max": 80000,
+    "unit": "year",
+    "text": "$70,000 to $80,000"
+   },
+   "employment": "employee",
+   "remote": {
+    "level": "preferred",
+    "note": "Listed location: DC. You will be looked to as an NWF expert on national flood insurance and disaster policy, and coastal resilience policy, with an emphasis on issues in the Federal Emergency Management Agency (FEMA) and…"
+   },
+   "fit": [
+    "wildlife",
+    "wetlands and Section 404",
+    "habitat restoration"
+   ],
+   "concerns": [
+    "Low end of the range is under your $80,000 floor.",
+    "Remote, but a location is listed or preferred."
+   ],
+   "score": 5,
+   "verified": true,
+   "jd": "Founded in 1936, the National Wildlife Federation (NWF or Federation) is America's largest and most trusted grassroots conservation organization with 52 state/territorial affiliates and more than six million members and supporters, including hunters, anglers, gardeners, birders, hikers, campers, paddlers, and outdoor enthusiasts of all stripes. The Federation's mission is to unite all Americans to ensure wildlife thrive in our rapidly changing world through programming focused on conserving wildlife, restoring habitats and waterways, expanding outdoor opportunities, connecting children with nature, and addressing the causes and consequences of climate change.\nTo support our mission, we are seeking a Policy Specialist to join our Water and Coasts team. In this role you will help guide and implement the team's federal policy strategies and campaigns, with a focus on resilient coasts and floodplains, including pre-disaster mitigation efforts and post-disaster recovery. Responsibilities will include serving as a NWF policy representative with decision-makers, partners and in key coalitions; collaborating with and supporting government affairs staff to represent NWF policy positions on Capitol Hill; and conducting policy research and providing support and coordination assistance for Water and Coasts team priorities as needed.\nYou will also contribute to development and maintenance of relationships with partner organizations, conduct Congressional and Administrative tracking, and develop educational and advocacy materials (ex. reports, factsheets, action alerts, blogs, etc). You will be looked to as an NWF expert on national flood insurance and disaster policy, and coastal resilience policy, with an emphasis on issues in the Federal Emergency Management Agency (FEMA) and National Oceanic and Atmospheric Administration (NOAA) space. Familiarity with nature-based solutions policies, projects, and implementation, as well as watershed and coastal restoration efforts, would also be beneficial to the role. At times you may be asked to assist with team coordination activities, including scheduling, note-taking, and facilitating meetings. You may also be asked to support other Water & Coasts team projects (including clean water campaign priorities) on an as-needed basis.\nWhile primarily focused on federal policy, in this role you will collaborate frequently with staff in other program areas on related issues, and will at times be asked to do state-specific research and outreach in addition to federal advocacy work.\nYour major areas of responsibility:\nPolicy Leadership: Play a leadership role in NWF's campaign development and implementation related to resilient coasts and floodplains, including pre-disaster mitigation efforts and post-disaster recovery. Conduct related policy research and legislative tracking, advise on identification of federal policy priorities, coordinate with partner organizations, and develop relationships within key agencies including Federal Emergency Management Authority (FEMA), National Oceanic and Atmospheric Administration (NOAA), and the U.S. Department of Housing and Urban Development (HUD). This work will require a detailed understanding of legislative and administrative issues related to federal disaster policy including the National Flood Insurance Program and Stafford Act, pre-disaster mitigation efforts and post-disaster recovery, and policies and programs impacting coastal communities and wildlife, with an emphasis on advancing natural infrastructure where appropriate and promoting equitable outcomes for communities pre- and post-disaster.\nCoalition Representation - Serve as the primary NWF representative in several coalition spaces focused on floodplain/coastal/disaster resilience policy. Build relationships with coalition partners, including cross-sectoral partners in the insurance and reinsurance space.\nGovernment Relations: Support the government affairs team's advocacy with Congress, the White House, and federal agencies. This includes tracking relevant hearings and rulemakings, identifying and monitoring team priorities in the budget and appropriations process, supporting meetings with congressional and executive offices by identifying targets, supplying talking points, participating in high-priority meetings, and researching, developing, and updating advocacy materials.\nFederation Cross-Team Collaboration : Help foster connectivity across relevant teams at the organization, providing federal policy expertise and support as needed to colleagues across programs working in the floodplain/coastal resilience space, as well those focused on wildfire and drought mitigation needs. Provide information and support to NWF affiliates on issues in portfolio area. Work proactively with team members to find natural points of intersection across our clean water, wetlands, river management, ecosystem restoration, and marine conservation efforts.\nProject-Specific Efforts - As requested, lead or contribute to individual projects related to areas of focus, including reports, analyses, interviews, and strategy development. Participate in the identification and fulfillment of team grant deliverables on a regular basis. Contribute to the development of funding proposals and grant reporting needs.\nMinimum Qualifications:\nSome familiarity with flood/disaster and coastal resilience policy required.\nExperience collaborating across teams to accomplish shared goals, including working with coalitions or NGO partnerships.\nExperience working with or for Congress and/or conducting Congressional outreach.\nAbility to manage a multitude of projects and meet deadlines.\nFast and detail-oriented learner.\nAbility to communicate positions clearly both verbally and in writing.\nSelf Starter - Able to prioritize workflow and anticipate needs with minimal oversight. Comfortable working independently on projects when needed.\nStrategic thinker - Able to see the big picture and develop an adaptive strategy…",
+   "firstSeen": "2026-10-07",
+   "lastSeen": "2026-10-07",
+   "closed": false
+  },
+  {
+   "id": "nwf:55041c9a-0447-4877-bea1-9f4f13a79c82",
+   "companyId": "nwf",
+   "title": "Field Manager, Healthy Waters Coalition",
+   "url": "https://recruiting.ultipro.com/NAT1047NWF/JobBoard/1ca8346a-33cc-401d-90d9-d7f752fdfd7d/OpportunityDetail?opportunityId=55041c9a-0447-4877-bea1-9f4f13a79c82",
+   "posted": "2026-09-02",
+   "closes": null,
+   "closesNote": "Open until filled",
+   "pay": {
+    "min": 72000,
+    "max": 80000,
+    "unit": "year",
+    "text": "$72,000 to $80,000"
+   },
+   "employment": "employee",
+   "remote": {
+    "level": "preferred",
+    "note": "Preference will be given to candidates who live in the Ohio River watershed, preferably in one of the states with the most land area in the watershed (Indiana, Kentucky, Ohio, Pennsylvania, Tennessee…"
+   },
+   "fit": [
+    "wildlife",
+    "habitat restoration"
+   ],
+   "concerns": [
+    "Low end of the range is under your $80,000 floor.",
+    "Remote, but a location is listed or preferred.",
+    "Posted 35 days ago. May be close to filled."
+   ],
+   "score": 5,
+   "verified": true,
+   "jd": "Founded in 1936, the National Wildlife Federation has grown into America's largest and most trusted grassroots conservation organization with 51 state and territorial affiliates and more than seven million members and supporters, including hunters, anglers, gardeners, birders, hikers, campers, paddlers, and outdoor enthusiasts of all ages and stripes. The mission of the National Wildlife Federation is to unite all Americans to ensure wildlife thrive in our rapidly changing world. We advance this mission through programming focused on conserving wildlife, restoring habitats and waterways, expanding outdoor opportunities, connecting children with nature, advancing environmental justice, and addressing the causes and consequences of climate change.\nThe National Wildlife Federation is seeking Field Manager for the Healthy Waters Coalition to seek out new and engage existing coalition members in our collective work to elevate Ohio River restoration and protection as a national priority. The Healthy Waters Coalition and its more than 160 members work to protect and restore the interconnected waters of the Ohio River Basin, which supply drinking water to more than 30 million people in portions of Alabama, Georgia, Illinois, Indiana, Kentucky, Maryland, Mississippi, New York, North Carolina, Ohio, Pennsylvania, South Carolina, Tennessee, Virginia, and West Virginia, as well as the federally recognized Tribal Nations of the Eastern Band of Cherokee Indians and Seneca Nation of Indians.\nPrincipal Duties:\nDevelop and implement annual Coalition field plans, priorities, and deliverables in collaboration with coalition members and leaders.\nEstablish field processes, procedures, and tracking mechanisms to support effective field operations.\nBuild and maintain relationships with local, state, regional, and national partners, including environmental, hunting and fishing, public health, civic, labor, youth, and other interested organizations across the region.\nCollaborate with Coalition staff and members in building, maintaining, and supporting existing and new relationships with federally recognized Tribal Nations.\nKeep Coalition members updated on key events, milestones, and opportunities though newsletters, listserv updates, talking points, and other communications.\nSupport Coalition convenings and events, which can include community listening sessions, annual Ohio River Summit, and Ohio River Hill Day in Washington, D.C.\nWork with Coalition partners and allies to populate story bank of local examples of the threats to local waters as well as the successful efforts to restore fish and wildlife habitat, clean up of toxic pollution, remediate mine waste, manage invasive species, reduce flooding, etc.\nShare member engagement opportunities, including sign-on letters, webinars, funding opportunities, and other resources.\nDevelop talking points, fact sheets, website content, and other materials to support Coalition outreach and communications.\nSupport Coalition social media channels to communicate core messages and that amplify aligned messages from our members and partners.\nQualifications\nMinimum 2-5 years of professional experience or equivalent working experience in issue advocacy, with a focus on building and strengthening partnerships and coalitions. Familiarity with conservation and environmental issues preferred.\nCuriosity to learn about, and commitment to help, the communities, partners, and allies with whom we are working to advance shared priorities.\nSuccessful track record establishing trust-based relationships with internal and external partners across a broad, diverse, and complex landscape.\nExcellent verbal and written communication skills with the ability to manage multiple projects and shifting priorities to meet deadlines.\nAbility to work independently in the execution of responsibilities while collaborating with other staff and organizations.\nExcellent organizational skills and attention to detail.\nHighly flexible with demonstrated ability to assess rolling tasks in a fast-paced environment and prioritize accordingly.\nProven ability to use good judgment in working independently, showing initiative, and responding to inquiries.\nApplicants are invited to learn more about National Wildlife Federation's required equity competencies at https://www.nwf.org/About-Us/Careers\nTravel:\nOccasional travel (1-3 times per month) for Healthy Waters events, professional development, NWF events, or team meetings.\nLocation and Work Mode:\nPreference will be given to candidates who live in the Ohio River watershed, preferably in one of the states with the most land area in the watershed (Indiana, Kentucky, Ohio, Pennsylvania, Tennessee, or West Virginia).\nThe National Wildlife Federation is committed to a flexible and empowered work environment with an authentic community of care for all staff. The position is a part of the National Wildlife Federation's Eastern Waters team.\nPhysical Requirements:\nRemaining in a normal seated or standing position for extended periods of time; reaching and grasping by extending hand(s) or arm(s); dexterity to manipulate objects with fingers, for example using a keyboard; communication skills using the spoken word; ability to see and hear within normal parameters; ability to move about workspace. The position requires mobility, including the ability to move materials weighing up to several pounds (such as a laptop computer or tablet).\nPersons with disabilities may be able to perform the essential duties of this position with reasonable accommodation. Requests for reasonable accommodation will be evaluated on an individual basis.\nPlease Note:\nThis job description sets forth the job's principal duties, responsibilities, and requirements; it should not be construed as an exhaustive statement, however. Unless they begin with the word &ldquo;may,&rdquo; the Essential Duties and Responsibilities described above are &ldquo;essential functions&rdquo; of the job, as defined by the Americ…",
+   "firstSeen": "2026-10-07",
+   "lastSeen": "2026-10-07",
+   "closed": false
+  },
+  {
+   "id": "esa:5031335008",
+   "companyId": "esa",
+   "title": "Senior Environmental Project Manager-Energy",
+   "url": "https://job-boards.greenhouse.io/environmentalscienceassociates/jobs/5031335008",
+   "posted": "2025-12-12",
+   "closes": null,
+   "closesNote": null,
+   "pay": {
+    "min": 170000,
+    "max": 205000,
+    "unit": "year",
+    "text": "$170,000 to $205,000"
+   },
+   "employment": "employee",
+   "remote": {
+    "level": "preferred",
+    "note": "Listed location: San Francisco, California, United States. We're looking for a candidate based out of Northern California who can work remotely and go onsite when needed."
+   },
+   "fit": [
+    "endangered species and ESA",
+    "NEPA",
+    "solar",
+    "transmission",
+    "permitting"
+   ],
+   "concerns": [
+    "Asks for 20+ years in renewable energy, more than you have in that sector.",
+    "Asks for 20+ years of experience.",
+    "Remote, but a location is listed or preferred.",
+    "Consulting firm, so expect billable hours and mixed clients.",
+    "Posted 299 days ago. May be close to filled."
+   ],
+   "score": 9,
+   "verified": true,
+   "jd": "Environmental Science Associates (ESA) is a 100% employee-owned environmental consulting firm. We plan, design, permit, mitigate, and restore for projects across our communities, infrastructure systems, open spaces, and wildlands. We are 50 years strong in 21 offices across California, the Pacific Northwest, and the Southeastern United States.\nESA is looking for a highly motivated Energy Planner and project Manager with 20+ years of related work experience , who can support various environmental compliance and regulatory processes for renewable energy and electrical infrastructure projects. This opportunity places a high value on collaboration , delivery , and quality work in a dynamic environment . We're looking for a candidate based out of Northern California who can work remotely and go onsite when needed.\nWho You Are\nYou are a senior-level professional with a minimum of 20+ years of related professional experience , at least some of which working in a consulting environment, with responsibilities including conducting research, analyzing impacts, writing sections of reports, and overseeing quality assurance/quality control reviews of deliverables. Proficiency with the California Environmental Quality Act ( CEQA ) and experience with the National Environmental Policy Act ( NEPA ) and similar state/federal regulations is required. Successful proposal writing experience is a plus.\nYou hold a Bachelor’s or Master’s degree with major coursework in environmental science or a related interdisciplinary field.\nYou have strong project management, business development, writing and analytical skills, and effective oral presentation skills with the ability to convey complex information understandably to various audiences. You are known for building teams, mentoring staff, and effectively managing sub-consultants. You contribute constructively and cooperatively to solve project and team challenges, and you provide coaching to foster teamwork and elevate others.\nYou have led and directed marketing and business development pursuits including developing capture strategies and leading proposals, interviews, and presentations.\nYou ideally have experience preparing analyses and evaluations related to renewable energy and electrical infrastructure projects.\nYou are located in California, ideally in Northern California and can work remotely.\nWhat You Will Do for ESA\nYou will serve as project manager, senior project manager, and/or contributing author for CEQA and NEPA documents for a variety of energy-related projects.\nYou will be responsible for managing tasks, project or task budgets and invoicing, and project delivery schedules; handling project logistics; disseminating and maintaining related information and resources; meeting with team members to gauge progress toward task completion; serving as the point person for team member or client questions; preparing or directing project research and analysis; supporting or leading public outreach efforts relating to environmental review; and delivering project assignments on time and within budget.\nYou will also consistently demonstrate your solid writing and attentive listening skills; participate in and/or lead client meetings; and present information understandably and speak persuasively about complex topics to clients, agency staff, teaming partners, other project stakeholders, and the general public.\nYou will lead marketing and business development pursuits for selected tasks and/or projects of moderate complexity. These efforts will include having the responsibility for preparing scopes of work, schedules, and budgets, providing technical input, and participating in interviews for new work.\nYou will provide mentorship and potentially supervise junior staff, including reviewing their work for accuracy and clarity and providing constructive feedback and career development guidance while working on projects together.\nYou will thrive in a fast-paced, challenging environment and be able to manage multiple responsibilities and deadlines, while working on a team or independently.\nWhat’s Special About ESA\nJoining ESA means becoming part of a close-knit team of environmental professionals who contribute to outstanding projects, improve environmental stewardship, and advance a more sustainable and resilient future for our communities and wild places.\nAt ESA, we provide benefits such as medical, dental, and vision insurance (paid at 70% for you AND your family), annual allocations of company shares through our employee stock ownership plan (ESOP), a 401(k) plan with company match, and paid vacation, sick leave, and holidays, to name a few. Spot and annual bonuses are available to reward the highest caliber work.\nWe also provide specific programs whether you want to further your technical expertise, sharpen your business acumen, or help lead the next generation of employee-owners. We want to support you in reaching your career goals through tuition reimbursement, professional development bonuses, and attendance at conferences.\nWhat’s Special About Our Energy Team in Northern California\nWe have managed the environmental analysis and permitting of more than 1,000 miles of electric transmission line and analyzed more than 16,000 MW of solar energy and nearly 1,300 MW of wind energy, as well as geothermal, biofuel and green hydrogen fuel energy generation projects on both private and federal lands. ESA’s energy and infrastructure clients range from regulating agencies to power producers, ports and surface mining concerns.\nLearn about our Energy work, click here .\nESA has established multiple pay ranges tailored to the economic factors in the geographies in which ESA staff reside. For this position, the range is approximately as listed based on our anticipated hiring locations as noted in the above job details. Actual compensation is determined by several factors including but not limited to an individual’s related experience, education, skills, and the city in which t…",
+   "firstSeen": "2026-10-07",
+   "lastSeen": "2026-10-07",
+   "closed": false
+  },
+  {
+   "id": "swca:15678",
+   "companyId": "swca",
+   "title": "Natural Resources Project Manager",
+   "url": "https://careers-swca.icims.com/jobs/15678/job",
+   "posted": null,
+   "closes": null,
+   "closesNote": "Open until filled",
+   "pay": {
+    "min": 73710,
+    "max": 95550,
+    "unit": "year",
+    "text": "$73,710 to $95,550"
+   },
+   "employment": "employee",
+   "remote": {
+    "level": "restricted",
+    "note": "Listed location: US-GA. Candidates must be located in Georgia with a preference for those located in the Atlanta, GA metropolitan area."
+   },
+   "fit": [
+    "endangered species and ESA",
+    "NEPA",
+    "wetlands and Section 404",
+    "agency consultation",
+    "solar",
+    "transmission",
+    "permitting",
+    "field work"
+   ],
+   "concerns": [
+    "Low end of the range is under your $80,000 floor.",
+    "Remote with a location requirement. Check that Florida qualifies.",
+    "Posting mentions oil, gas, or pipeline work.",
+    "Consulting firm, so expect billable hours and mixed clients."
+   ],
+   "score": 12,
+   "verified": true,
+   "jd": "SWCA Environmental Consultants - Careers - Natural Resources Project Manager in Georgia | Careers at Georgia\nPlease Enable Cookies to Continue\nPlease enable cookies in your browser to experience all the personalized features of this site, including the ability to apply for a job.\nWelcome page\nReturning Candidate?\nLog back in!\nNatural Resources Project Manager\nRequisition Number\n2026-15678\n# of Openings\n1\nOffice Location\nUS-GA | US-GA-Atlanta\nProgram\nNatural Resources / Biology / Ecology\nHire Type\nRegular\nHourly/Salary\nsalaried\nAbout the opportunity\nSWCA Environmental Consultants is seeking a highly experienced, dynamic, self-motivated Natural Resources Project Manager with strong interpersonal skills and experience in natural resources management and biological studies. This individual will successfully drive our projects through all phases from early planning and permitting to construction.\nThis Natural Resources Project Manager should have technical experience in a range of activities such as biological and wetland surveys; federal, state, and local wetland regulations; Endangered Species Act compliance; Clean Water Act Section 404/401 permitting; and agency interactions at all levels. This individual will provide natural resources, cultural resources, and permitting services to clients across a variety of market sectors, supporting project development and regulatory compliance needs. Experience supporting energy development projects is a plus. Skills include the ability to manage small to medium-sized projects and track milestones within schedule and budget expectations. You will also support or be responsible for QA/QC oversight of field data and technical deliverables to support reporting, permitting, and environmental compliance efforts.\nThis is a regular, benefited, full-time remote position. Candidates must be located in Georgia with a preference for those located in the Atlanta, GA metropolitan area.\nWhat you will accomplish\nServe as a project manager or task lead on projects of varying size and complexity, ensuring budgets, schedules, safety, and quality standards are met.\nCoordinate and support multidisciplinary teams providing natural resources, cultural resources, and permitting services to clients.\nSupervise, mentor, and provide technical support to staff-level biologists and field teams.\nLead biological field assessments, wetland delineations, and regulatory permit applications for federal, state, and local agencies.\nManage and lead project teams supporting energy, infrastructure, land development, and other client projects, including FERC-regulated projects and third-party NEPA documentation.\nAct as the regulatory and permit compliance liaison between agencies and clients, proactively addressing compliance issues.\nWork closely with corporate accounting to review invoices, expenditures, and project audits.\nProvide peer review for technical reports and environmental permits, ensuring scientific and professional integrity.\nImplement and enforce SWCA's safety procedures and ethical standards.\nCommunicate effectively with diverse project stakeholders, including regulatory agencies, field crews, trade workers, clients, and third parties.\nSupport business development by building client relationships, identifying opportunities, and contributing to capture plans and proposals.\nUtilize strong organizational, verbal, written, and graphic communication skills in project execution and stakeholder engagement.\nExperience and qualifications for success\nMinimum Qualifications:\nBachelor's degree in an environmental-related field, or demonstrated equivalent experience.\nFour years of relevant, progressively responsible experience in natural resources, permitting, environmental consulting, or related.\nGA permitting experience.\nTwo years of experience managing projects and/or providing natural resources, cultural resources, and permitting services to clients.\nWorking knowledge of Microsoft Suite products (Excel, PowerPoint, Teams, and Word).\nWorking knowledge of federal, state, and local permitting laws and processes.\nPreferred Qualifications:\nS even years of experience is highly preferred.\nExperience supporting energy development projects, including generation, transmission, renewable energy, and/or oil and gas.\nExperience managing or coordinating multidisciplinary teams providing natural resources, cultural resources, and permitting services.\nFERC-related infrastructure project experience.\nExperience supporting solar generation projects in the Southeast.\nSWCA Environmental Consultants is a growing, 100% employee-owned company that offers a full range of environmental services. Our North Star is to be the best place to work and a leader in sustainability, bringing sound science and creative solutions to global environmental challenges, all while staying true to our commitment to employee ownership. At SWCA, we live our core values every day: we collaborate as #OneSWCA, we're #AlwaysLearning, we #NeverSettle, and we #GiveBack to our communities. With offices across the country, we're proud to be one of the largest environmental compliance firms in the U.S. and to rank among Engineering News-Record's Top 200 Environmental Firms.\nSWCA is committed to salary equity and transparency. In alignment with this commitment, we post good faith pay ranges in all job postings. An employee in this Southeast based position can expect a salary of $73,710.00 to $95,550.00 /year. Actual pay within this range may depend on experience, qualifications, geographic location, client requirements where applicable, and other factors permitted by law. Regular-status employees are also eligible for performance bonuses. Candidates are also encouraged to consider SWCA's Total Rewards package\n( https://www.swca.com/careers/benefits-wellness/ ) , which includes a competitive Benefits package, forward-thinking workplace flexibility, outstanding corporate culture, award-winning career development, and more.\nWe offer a support…",
+   "firstSeen": "2026-10-07",
+   "lastSeen": "2026-10-07",
+   "closed": false
+  },
+  {
+   "id": "swca:15677",
+   "companyId": "swca",
+   "title": "Natural Resources Associate Project Manager",
+   "url": "https://careers-swca.icims.com/jobs/15677/job",
+   "posted": null,
+   "closes": null,
+   "closesNote": "Open until filled",
+   "pay": {
+    "min": 66612,
+    "max": 85176,
+    "unit": "year",
+    "text": "$66,612 to $85,176"
+   },
+   "employment": "employee",
+   "remote": {
+    "level": "restricted",
+    "note": "Listed location: US-GA. Candidates must be located in Georgia with a preference for those located in the Atlanta, GA metropolitan area."
+   },
+   "fit": [
+    "NEPA",
+    "wetlands and Section 404",
+    "agency consultation",
+    "solar",
+    "transmission",
+    "permitting",
+    "field work"
+   ],
+   "concerns": [
+    "Low end of the range is under your $80,000 floor.",
+    "Remote with a location requirement. Check that Florida qualifies.",
+    "Posting mentions oil, gas, or pipeline work.",
+    "Consulting firm, so expect billable hours and mixed clients."
+   ],
+   "score": 11,
+   "verified": true,
+   "jd": "SWCA Environmental Consultants - Careers - Natural Resources Associate Project Manager in Georgia | Careers at Georgia\nPlease Enable Cookies to Continue\nPlease enable cookies in your browser to experience all the personalized features of this site, including the ability to apply for a job.\nWelcome page\nReturning Candidate?\nLog back in!\nNatural Resources Associate Project Manager\nRequisition Number\n2026-15677\n# of Openings\n1\nOffice Location\nUS-GA | US-GA-Atlanta\nProgram\nNatural Resources / Biology / Ecology\nHire Type\nRegular\nHourly/Salary\nsalaried\nAbout the opportunity\nSWCA Environmental Consultants is seeking a dynamic, self-motivated Associate Project Manager with strong interpersonal skills and experience in natural resources, cultural resources, environmental permitting, or related environmental consulting services. This individual will support projects through all phases from early planning and permitting to construction while developing project management skills and growing into increasing levels of responsibility.\nThe Assistant Project Manager will support the delivery of natural resources, cultural resources, and permitting services to clients across a variety of market sectors, helping clients meet project development and regulatory compliance objectives. Experience supporting energy development projects is a plus.\nThis is a regular, benefited, full-time remote position. Candidates must be located in Georgia with a preference for those located in the Atlanta, GA metropolitan area.\nWhat you will accomplish\nSupport Project Managers in the successful delivery of projects by assisting with schedules, budgets, task management, and client deliverables.\nCoordinate and support multidisciplinary teams providing natural resources, cultural resources, and permitting services to clients.\nServe as a task lead for project components of varying size and complexity.\nConduct or support biological field assessments, wetland delineations, cultural resources assessments, and environmental permitting efforts.\nPrepare permit applications, technical reports, environmental documentation, and agency coordination materials.\nSupport projects involving energy, infrastructure, land development, and other client sectors, including FERC-regulated projects and third-party NEPA documentation.\nAssist with agency coordination and permit compliance activities.\nSupport QA/QC review of field data, technical reports, permit applications, and environmental documentation.\nCoordinate with project teams to ensure work is completed safely, on schedule, and within budget expectations.\nCommunicate effectively with project stakeholders, including regulatory agencies, field crews, clients, contractors, and third parties.\nSupport business development activities, including proposal preparation, client relationship development, and opportunity tracking.\nUtilize strong organizational, verbal, written, and graphic communication skills in project execution and stakeholder engagement.\nTake responsibility for team safety, develop safety plans (when applicable), and anticipate potential safety hazards.\nExperience and qualifications for success\nRequirements:\nBachelor's degree in an environmental-related field.\nThree years of relevant, progressively responsible experience, including 1 year of managing projects.\nExperience supporting projects and/or providing natural resources, cultural resources, and permitting services to clients.\nGA permitting experience.\nExperience managing project tasks, coordinating field efforts, or supporting project delivery.\nWorking knowledge of Microsoft Suite products (Excel, PowerPoint, Teams, and Word).\nWorking knowledge of federal, state, and local permitting laws and processes.\nPreferred Qualifications:\nFive years of related experience is preferred;\nExperience supporting energy development projects, including generation, transmission, renewable energy, and/or oil and gas.\nExperience in regulatory permitting in the Southeast.\nFERC-related infrastructure project experience.\nExperience supporting solar generation projects in the Southeast.\nExperience supporting multidisciplinary teams providing natural resources, cultural resources, and permitting services.\nExperience with NEPA compliance, environmental review, or agency consultation processes.\nSWCA Environmental Consultants is a growing, 100% employee-owned company that offers a full range of environmental services. Our North Star is to be the best place to work and a leader in sustainability, bringing sound science and creative solutions to global environmental challenges, all while staying true to our commitment to employee ownership. At SWCA, we live our core values every day: we collaborate as #OneSWCA, we're #AlwaysLearning, we #NeverSettle, and we #GiveBack to our communities. With offices across the country, we're proud to be one of the largest environmental compliance firms in the U.S. and to rank among Engineering News-Record's Top 200 Environmental Firms.\nSWCA is committed to salary equity and transparency. In alignment with this commitment, we post good faith pay ranges in all job postings. An employee in this Southeast based position can expect a salary of $66,612.00 to $85,176.00 /year. Actual pay within this range may depend on experience, qualifications, geographic location, client requirements where applicable, and other factors permitted by law. Regular-status employees are also eligible for performance bonuses. Candidates are also encouraged to consider SWCA's Total Rewards package ( https://www.swca.com/careers/benefits-wellness/ ) , which includes a competitive Benefits package, forward-thinking workplace flexibility, outstanding corporate culture, award-winning career development, and more.\nWe offer a supportive, team-focused work environment, competitive pay, and great benefits-including a 100% employee stock ownership plan (ESOP) to help you build a strong financial future. At SWCA, we're committed to helping our team members grow int…",
+   "firstSeen": "2026-10-07",
+   "lastSeen": "2026-10-07",
+   "closed": false
   }
  ]
 }
