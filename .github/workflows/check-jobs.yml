@@ -1,0 +1,88 @@
+name: Check job sites
+
+on:
+  schedule:
+    # Every day at 11:00 in the morning, Eastern time. GitHub schedules run on UTC, so there is one
+    # entry for daylight time and one for standard time, and the first step skips the wrong one.
+    - cron: '0 15 * * *'
+    - cron: '0 16 * * *'
+  workflow_dispatch:          # the dashboard's "Check for new jobs now" button, or "Run workflow" by hand
+  push:
+    # Uploading a new job-watch zip, this file, or an edited settings file starts a run.
+    paths: ['job-watch*.zip', '**/job-watch*.zip', '.github/workflows/check-jobs.yml', 'data/companies.json', 'data/profile.json']
+
+# The job can write to this repository and nothing else.
+permissions:
+  contents: write
+
+concurrency:
+  group: check-jobs
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OWNER: ${{ github.repository_owner }}
+      OWNER_ID: ${{ github.repository_owner_id }}
+      EVENT: ${{ github.event_name }}
+    steps:
+      - name: Scheduled runs only go ahead at 11 in the morning, Eastern time
+        id: clock
+        run: |
+          if [ "$EVENT" = "schedule" ] && [ "$(TZ=America/New_York date +%H)" != "11" ]; then
+            echo "Not 11 in the morning Eastern. Skipping this one."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/checkout@v5   # published by GitHub; pin to a commit SHA if you want it frozen
+        if: steps.clock.outputs.skip != 'true'
+      - name: Set who the commits are from
+        if: steps.clock.outputs.skip != 'true'
+        run: |
+          git config user.name "$OWNER"
+          git config user.email "${OWNER_ID}+${OWNER}@users.noreply.github.com"
+      - name: Unpack the project or an update
+        if: steps.clock.outputs.skip != 'true'
+        run: |
+          # An uploaded job-watch zip outside .github is an update. One inside .github is only used for first-time setup.
+          ZIP=$(find . -name 'job-watch*.zip' -not -path './.git/*' -not -path './.github/*' | head -n 1)
+          if [ -z "$ZIP" ] && [ ! -f crawler/run.js ]; then
+            ZIP=$(find ./.github -name 'job-watch*.zip' | head -n 1)
+          fi
+          if [ -n "$ZIP" ]; then
+            echo "Unpacking $ZIP"
+            if [ -f public/data/jobs.json ]; then
+              # Keep the live job list and what the check has learned about each site.
+              unzip -o -q "$ZIP" -x ".github/*" "public/data/jobs.json" "data/ats-cache.json" -d .
+            else
+              unzip -o -q "$ZIP" -x ".github/*" -d .
+            fi
+            # A zip inside .github is left alone. This job is not allowed to change that folder.
+            case "$ZIP" in ./.github/*) ;; *) rm "$ZIP" ;; esac
+            rm -f api/tailor.test.js crawler/test.js   # moved to the tests folder
+            git add -A
+            git diff --cached --quiet || git commit -m "Update project files"
+            git push
+          elif [ ! -f crawler/run.js ]; then
+            echo "::error::The project files are missing and no job-watch zip was found. Upload job-watch.zip to the repository."
+            exit 1
+          fi
+      - name: Check the matching rules still pass
+        if: steps.clock.outputs.skip != 'true'
+        run: |
+          if [ -f tests/crawler.test.js ]; then node tests/crawler.test.js; else node crawler/test.js; fi
+      - name: Read the company sites and job boards
+        if: steps.clock.outputs.skip != 'true'
+        env:   # optional free keys for two job boards; leave unset to skip them
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          USAJOBS_KEY: ${{ secrets.USAJOBS_KEY }}
+          USAJOBS_EMAIL: ${{ secrets.USAJOBS_EMAIL }}
+        run: node crawler/run.js
+      - name: Save results
+        if: steps.clock.outputs.skip != 'true'
+        run: |
+          git add public/data/jobs.json data/ats-cache.json
+          git diff --cached --quiet || git commit -m "Job check $(date -u +%F)"
+          git push
